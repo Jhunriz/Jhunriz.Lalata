@@ -47,14 +47,6 @@ export default function Navbar() {
                 className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
                 to={"/Skills"}
               >
-                Skills
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
-                to={"/Skills"}
-              >
                 Portfolio
               </Link>
             </li>
