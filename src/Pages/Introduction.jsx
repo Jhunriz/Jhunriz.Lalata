@@ -5,9 +5,9 @@ import SecondaryButton from "../Components/SecondaryButton";
 export default function Introduction() {
   return (
     <>
-      <div className="flex justify-center items-center p-32 lg:p-10">
+      <div className="flex justify-center items-center p-28 lg:p-10">
         <img src={jhunriz} className="z-20" />
-        <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase">
+        <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24">
           Full Stack web developer
         </p>
       </div>
