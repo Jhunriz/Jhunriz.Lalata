@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [navBar, setNavBar] = useState(false);
@@ -24,27 +25,48 @@ export default function Navbar() {
             navBar ? "flex" : "hidden"
           } mt-5`}
         >
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            Home
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>Services</p>
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>About</p>
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>Skills</p>
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>Portfolio</p>
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>Blog</p>
-          </div>
-          <div className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center">
-            <p>Contacts</p>
-          </div>
+          <ul className="flex flex-col lg:flex-row gap-5">
+            <li>
+              <Link
+                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
+                to={"/"}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
+                to={"/About"}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
+                to={"/About"}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
+                to={"/About"}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
+                to={"/About"}
+              >
+                Contacts
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </>
