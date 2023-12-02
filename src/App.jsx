@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Introduction from "./Pages/Introduction";
-import About from "./Pages/About";
 import Navbar from "./Layout/Navbar";
 import MainContent from "./Layout/MainContent";
+import Skills from "./Pages/Skills";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/Introduction" element={<Introduction />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/Skills" element={<Skills />} />
         </Routes>
       </BrowserRouter>
     </div>

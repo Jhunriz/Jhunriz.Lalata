@@ -1,6 +1,6 @@
 import React from "react";
 import Introduction from "../Pages/Introduction";
-import About from "../Pages/About";
+import Skills from "../Pages/Skills";
 
 export default function MainContent() {
   return (
@@ -9,7 +9,7 @@ export default function MainContent() {
         <Introduction />
       </div>
       <div>
-        <About />
+        <Skills />
       </div>
     </div>
   );
