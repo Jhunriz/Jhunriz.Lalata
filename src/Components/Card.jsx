@@ -12,7 +12,7 @@ export default function SkillCards({ image, title, styledColor }) {
     AOS.init();
   }, []);
   return (
-    <Card sx={{ maxWidth: 345 }} data-aos="zoom-out-up">
+    <Card sx={{ maxWidth: 345 }} data-aos="fade-up">
       <CardActionArea>
         <div className={styledColor}>
           <CardMedia component="img" height="140" image={image} />

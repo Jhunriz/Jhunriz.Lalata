@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import jhunriz from "../assets/jhunriz.png";
 import SecondaryButton from "../Components/SecondaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Introduction() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="flex justify-center items-center p-28 lg:p-10">
         <img src={jhunriz} className="z-20" />
-        <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24">
+        <p
+          data-aos="fade-right"
+          className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24"
+        >
           Full Stack web developer
         </p>
       </div>
