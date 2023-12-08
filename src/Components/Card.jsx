@@ -1,13 +1,18 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function SkillCards({ image, title, styledColor }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} data-aos="zoom-out-up">
       <CardActionArea>
         <div className={styledColor}>
           <CardMedia component="img" height="140" image={image} />
