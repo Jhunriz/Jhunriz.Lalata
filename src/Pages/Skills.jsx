@@ -3,6 +3,7 @@ import SkillCards from "../Components/Card";
 import react from "../assets/react2.png";
 import laravel from "../assets/laravel2.png";
 import mysql from "../assets/mysql.png";
+import tailwind from "../assets/tailwindcss.png";
 export default function Skills() {
   const [rotation, setRotation] = useState(0);
 
@@ -14,7 +15,7 @@ export default function Skills() {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div class="grid grid-col lg:grid-cols-3 justify-items-center gap-5 lg:px-32 py-24">
+    <div class="grid grid-col lg:grid-cols-4 justify-items-center gap-10 lg:px-96 py-24">
       <SkillCards
         title={"Reactjs"}
         styledColor={"bg-blue-100"}
@@ -39,6 +40,16 @@ export default function Skills() {
         title={"MySQL"}
         image={mysql}
         styledColor={"bg-gray-200"}
+        style={{
+          fontSize: "30vh",
+          transform: `rotate(${rotation}deg)`,
+          color: "",
+        }}
+      />
+      <SkillCards
+        title={"TailwindCss"}
+        image={tailwind}
+        styledColor={"bg-green-100"}
         style={{
           fontSize: "30vh",
           transform: `rotate(${rotation}deg)`,
