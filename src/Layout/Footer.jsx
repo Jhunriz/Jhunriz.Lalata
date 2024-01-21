@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-black">
+    <div className="" style={{ backgroundColor: "#121212" }}>
       <div className="mx-auto w-full px-24 p-4 py-6 lg:py-8">
         <div className="">
           <div className="md:flex md:justify-between">
