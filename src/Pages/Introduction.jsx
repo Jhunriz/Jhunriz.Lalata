@@ -41,9 +41,11 @@ export default function Introduction() {
             </SecondaryButton>
           </a>
           <button className="`inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-dark-300 uppercase tracking-widest shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150">
-            <div className="flex justify-center items-center gap-1">
-              <ion-icon name="logo-github"></ion-icon>Github
-            </div>
+            <a href="https://github.com/Jhunriz">
+              <div className="flex justify-center items-center gap-1">
+                <ion-icon name="logo-github"></ion-icon>Github
+              </div>
+            </a>
           </button>
         </div>
       </div>
