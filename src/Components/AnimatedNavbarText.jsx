@@ -1,5 +1,10 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+
+const design = {
+  color: "black",
+};
+
 const fadeIn = keyframes`
 from {
   opacity: 0;
@@ -17,5 +22,5 @@ const AniNavTextContent = styled.text`
 `;
 
 export default function AnimatedNavbarText({ display }) {
-  return <AniNavTextContent>{display}</AniNavTextContent>;
+  return <AniNavTextContent style={design}>{display}</AniNavTextContent>;
 }

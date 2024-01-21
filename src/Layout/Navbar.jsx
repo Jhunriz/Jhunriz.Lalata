@@ -8,13 +8,6 @@ export default function Navbar() {
   const toggleMenu = () => {
     setNavBar(!navBar);
   };
-
-  const style = {
-    fontFamily: "Arial, sans-serif",
-    fontSize: "16px",
-    fontWeight: "bold",
-  };
-
   return (
     <>
       <div className="sticky lg:flex lg:flex-grow gap-5 justify-between lg:justify-between items-center p-10 lg:p-8 shadow-2xl w-full top-0 bg-white z-50 lg:px-24">
@@ -36,22 +29,22 @@ export default function Navbar() {
           } mt-5`}
         >
           <ul className="flex flex-col lg:flex-row gap-5">
-            <li style={style}>
+            <li>
               <Link to={"/"}>
                 <AnimatedNavbarText display="Home" />
               </Link>
             </li>
-            <li style={style}>
+            <li>
               <Link to={"/Skills"}>
                 <AnimatedNavbarText display="Skills" />
               </Link>
             </li>
-            <li style={style}>
+            <li>
               <Link to={"/Skills"}>
                 <AnimatedNavbarText display="Portfolio" />
               </Link>
             </li>
-            <li style={style}>
+            <li>
               <Link to={"/Skills"}>
                 <AnimatedNavbarText display="Contact" />
               </Link>
