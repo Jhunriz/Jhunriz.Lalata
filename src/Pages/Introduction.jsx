@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import jhunriz from "../assets/jhunriz.png";
 import SecondaryButton from "../Components/SecondaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Introduction() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="flex justify-center items-center p-28 lg:p-10">
         <img src={jhunriz} className="z-20" />
-        <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24">
+        <p
+          data-aos="fade-right"
+          className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24"
+        >
           Full Stack web developer
         </p>
       </div>
@@ -33,9 +41,11 @@ export default function Introduction() {
             </SecondaryButton>
           </a>
           <button className="`inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-dark-300 uppercase tracking-widest shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150">
-            <div className="flex justify-center items-center gap-1">
-              <ion-icon name="logo-github"></ion-icon>Github
-            </div>
+            <a href="https://github.com/Jhunriz">
+              <div className="flex justify-center items-center gap-1">
+                <ion-icon name="logo-github"></ion-icon>Github
+              </div>
+            </a>
           </button>
         </div>
       </div>

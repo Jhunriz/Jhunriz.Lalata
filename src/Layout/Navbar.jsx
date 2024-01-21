@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import AnimatedNavbarText from "../Components/AnimatedNavbarText";
 
 export default function Navbar() {
   const [navBar, setNavBar] = useState(false);
@@ -7,12 +8,14 @@ export default function Navbar() {
   const toggleMenu = () => {
     setNavBar(!navBar);
   };
-
   return (
     <>
       <div className="sticky lg:flex lg:flex-grow gap-5 justify-between lg:justify-between items-center p-10 lg:p-8 shadow-2xl w-full top-0 bg-white z-50 lg:px-24">
         <div className="flex flex-grow w-full justify-between items-center">
-          <div className="text-xl lg:text-3xl font-semibold">JL-DEV</div>
+          <div className="text-xl lg:text-3xl font-semibold">
+            {/* <AnimatedNavbarText>JL-DEV</AnimatedNavbarText> */}
+            <AnimatedNavbarText display="JL-DEV" />
+          </div>
           <div
             className="lg:hidden justify-end cursor-pointer"
             onClick={toggleMenu}
@@ -27,35 +30,23 @@ export default function Navbar() {
         >
           <ul className="flex flex-col lg:flex-row gap-5">
             <li>
-              <Link
-                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
-                to={"/"}
-              >
-                Home
+              <Link to={"/"}>
+                <AnimatedNavbarText display="Home" />
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
-                to={"/Skills"}
-              >
-                Skills
+              <Link to={"/Skills"}>
+                <AnimatedNavbarText display="Skills" />
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
-                to={"/Skills"}
-              >
-                Portfolio
+              <Link to={"/Skills"}>
+                <AnimatedNavbarText display="Portfolio" />
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:font-bold cursor-pointer flex flex-grow w-full py-2 justify-center items-center"
-                to={"/Skills"}
-              >
-                Contacts
+              <Link to={"/Skills"}>
+                <AnimatedNavbarText display="Contact" />
               </Link>
             </li>
           </ul>
