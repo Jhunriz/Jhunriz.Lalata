@@ -1,57 +1,97 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedNavbarText from "../Components/AnimatedNavbarText";
+import styled from "styled-components";
 
-export default function Navbar() {
-  const [navBar, setNavBar] = useState(false);
+const Logo = styled.a`
+  color: #050316;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
 
-  const toggleMenu = () => {
-    setNavBar(!navBar);
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
+`;
+
+const Nav = styled.nav`
+  background: #fbfbfe;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: relative;
+  z-index: 10;
+  border-bottom: 2px solid #050316;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const MenuIcon = styled.div`
+  display: none;
+  color: #160df9;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const Menu = styled.div`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+    width: 100%;
+    background: #333;
+    transition: left 0.3s ease-in-out;
+  }
+`;
+
+const MenuItem = styled.a`
+  color: #050316;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 20px;
+
+  &:hover {
+    color: #dddbff;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 0;
+  }
+`;
+
+const StyledNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
   };
   return (
-    <>
-      <div className="sticky lg:flex lg:flex-grow gap-5 justify-between lg:justify-between items-center p-10 lg:p-8 shadow-2xl w-full top-0 bg-white z-50 lg:px-24">
-        <div className="flex flex-grow w-full justify-between items-center">
-          <div className="text-xl lg:text-3xl font-semibold">
-            {/* <AnimatedNavbarText>JL-DEV</AnimatedNavbarText> */}
-            <AnimatedNavbarText display="JL-DEV" />
-          </div>
-          <div
-            className="lg:hidden justify-end cursor-pointer"
-            onClick={toggleMenu}
-          >
-            <ion-icon name="menu-outline"></ion-icon>
-          </div>
-        </div>
-        <div
-          className={`lg:flex lg:justify-center justify-center flex flex-col lg:flex-row items-center gap-5 ${
-            navBar ? "flex" : "hidden"
-          } mt-5`}
-        >
-          <ul className="flex flex-col lg:flex-row gap-5">
-            <li>
-              <Link to={"/"}>
-                <AnimatedNavbarText display="Home" />
-              </Link>
-            </li>
-            <li>
-              <Link to={"/Skills"}>
-                <AnimatedNavbarText display="Skills" />
-              </Link>
-            </li>
-            <li>
-              <Link to={"/Skills"}>
-                <AnimatedNavbarText display="Portfolio" />
-              </Link>
-            </li>
-            <li>
-              <Link to={"/Skills"}>
-                <AnimatedNavbarText display="Contact" />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </>
+    <div>
+      <Nav>
+        <Logo href="#">DEV.J</Logo>
+        <MenuIcon onClick={toggle}>
+          <i className={isOpen ? "X" : "X"}></i>
+        </MenuIcon>
+        <Menu isOpen={isOpen}>
+          <MenuItem href="#">Home</MenuItem>
+          <MenuItem href="#">About</MenuItem>
+          <MenuItem href="#">Services</MenuItem>
+          <MenuItem href="#">Contact</MenuItem>
+        </Menu>
+      </Nav>
+    </div>
   );
-}
+};
+
+export default StyledNavbar;
