@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div
-      className="static z-50 w-full bottom-0"
+      className="fixed z-50 w-full bottom-0"
       style={{ backgroundColor: "#121212" }}
     >
       <div className="mx-auto w-full px-24 p-4 py-6 lg:py-8">

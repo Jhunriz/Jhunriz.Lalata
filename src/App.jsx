@@ -6,6 +6,7 @@ import MainContent from "./Layout/MainContent";
 import Skills from "./Pages/Skills";
 import Footer from "./Layout/Footer";
 import StyledNavbar from "./Layout/Navbar";
+import MainLayout from "./Layout/MainLayout";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,13 +14,11 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <StyledNavbar />
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/Introduction" element={<Introduction />} />
           <Route path="/Skills" element={<Skills />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );

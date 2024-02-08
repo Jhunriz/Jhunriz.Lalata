@@ -3,6 +3,7 @@ import jhunriz from "../assets/jhunriz.png";
 import SecondaryButton from "../Components/SecondaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MainLayout from "../Layout/MainLayout";
 
 export default function Introduction() {
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function Introduction() {
   return (
     <>
       <div className="flex justify-center items-center p-28 lg:p-10">
-        <img src={jhunriz} className="z-20" />
+        {/* <img src={jhunriz} className="z-20" /> */}
         <p
           data-aos="fade-right"
           className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24"
