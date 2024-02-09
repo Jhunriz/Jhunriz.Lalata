@@ -2,10 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-ion-icon {
-  font-size: 34px;
-}
-
-.card-ion-icon {
-  font-size: 100px;
+:root {
+  --text: #060606;
+  --background: #f9fafb;
+  --primary: #6e95aa;
+  --secondary: #9abdd0;
+  --accent: #6eabcb;
 }

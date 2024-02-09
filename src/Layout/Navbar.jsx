@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedNavbarText from "../Components/AnimatedNavbarText";
 import styled from "styled-components";
+import StyledSecondaryButton from "../Components/SecondaryButton";
 
 const Logo = styled.a`
   color: #050316;
@@ -63,7 +64,7 @@ const MenuItem = styled.a`
   margin-right: 20px;
 
   &:hover {
-    color: #dddbff;
+    color: var(--text);
   }
 
   @media screen and (max-width: 768px) {
@@ -88,6 +89,11 @@ const StyledNavbar = () => {
           <MenuItem href="#">About</MenuItem>
           <MenuItem href="#">Services</MenuItem>
           <MenuItem href="#">Contact</MenuItem>
+          <MenuItem href="#">
+            <StyledSecondaryButton title="DOWNLOAD CV">
+              Download CV
+            </StyledSecondaryButton>
+          </MenuItem>
         </Menu>
       </Nav>
     </div>
