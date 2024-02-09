@@ -24,6 +24,8 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  padding-left: 8rem;
+  padding-right: 8rem;
   position: relative;
   z-index: 10;
   border-bottom: 2px solid var(--accent);
