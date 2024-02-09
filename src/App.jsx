@@ -4,15 +4,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Introduction from "./Pages/Introduction";
 import MainContent from "./Layout/MainContent";
 import Skills from "./Pages/Skills";
-import Footer from "./Layout/Footer";
-import StyledNavbar from "./Layout/Navbar";
-import MainLayout from "./Layout/MainLayout";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainContent />} />

@@ -4,24 +4,53 @@ import SecondaryButton from "../Components/SecondaryButton";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import MainLayout from "../Layout/MainLayout";
+import styled from "styled-components";
 
 export default function Introduction() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const CvTitle = styled.h1`
+    display: inline-block;
+    padding: 50px;
+    font-size: 40px;
+    font-weight: 800;
+    background-image: linear-gradient(135deg, #fff, #f2f2f2, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "poppins", ui-sans-serif;
+
+    @media (max-width: 768px) {
+      padding: 0 10px;
+      font-size: 40px;
+    }
+
+    @media (max-width: 400px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  `;
+
+  const CvtitleDiv = styled.div`
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    direction: column;
+    padding: 10px;
+    margin: 5px;
+  `;
+
   return (
     <>
-      <div className="flex justify-center items-center p-28 lg:p-10">
-        {/* <img src={jhunriz} className="z-20" /> */}
-        <p
-          data-aos="fade-right"
-          className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase mx-24"
-        >
-          Full Stack web developer
-        </p>
-      </div>
+      <CvtitleDiv>
+        <CvTitle data-aos="fade-right">Hay' im Jhunriz.</CvTitle>
+      </CvtitleDiv>
 
-      <div className="flex flex-col justify-center items-center">
+      {/* <div className="flex flex-col justify-center items-center">
         <p className="lg:text-5xl text-2xl font-bold uppercase">
           Full Stack Web Developer
         </p>
@@ -49,7 +78,7 @@ export default function Introduction() {
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

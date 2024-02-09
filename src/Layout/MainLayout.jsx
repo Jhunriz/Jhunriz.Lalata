@@ -4,10 +4,10 @@ import StyledNavbar from "./Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="">
       <StyledNavbar />
-      <main className="py-24">{children}</main>
-      <Footer />
+      <main className="">{children}</main>
+      {/* <Footer /> */}
     </div>
   );
 };

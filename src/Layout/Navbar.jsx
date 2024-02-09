@@ -5,7 +5,7 @@ import styled from "styled-components";
 import StyledSecondaryButton from "../Components/SecondaryButton";
 
 const Logo = styled.a`
-  color: #050316;
+  color: var(--text);
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
@@ -16,7 +16,7 @@ const Logo = styled.a`
 `;
 
 const Nav = styled.nav`
-  background: #fbfbfe;
+  background: var(--background);
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@ const Nav = styled.nav`
   height: 80px;
   position: relative;
   z-index: 10;
-  border-bottom: 2px solid #050316;
+  border-bottom: 2px solid var(--accent);
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -58,7 +58,7 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.a`
-  color: #050316;
+  color: var(--text);
   text-decoration: none;
   font-size: 1.2rem;
   margin-right: 20px;
