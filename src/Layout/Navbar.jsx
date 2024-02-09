@@ -95,8 +95,12 @@ const StyledNavbar = () => {
           <i className={isOpen ? "X" : "X"}></i>
         </MenuIcon>
         <Menu isOpen={isOpen} data-aos="fade-right">
-          <MenuItem href="#">Home</MenuItem>
-          <MenuItem href="#">About</MenuItem>
+          <MenuItem>
+            <Link to={"/"}>Home</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to={"/Skills"}>Skills</Link>
+          </MenuItem>
           <MenuItem href="#">Services</MenuItem>
           <MenuItem href="#">Contact</MenuItem>
           <MenuItem href="#">
