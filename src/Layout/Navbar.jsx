@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedNavbarText from "../Components/AnimatedNavbarText";
 import styled from "styled-components";
 import StyledSecondaryButton from "../Components/SecondaryButton";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Logo = styled.a`
   color: var(--text);
@@ -77,14 +79,20 @@ const StyledNavbar = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
       <Nav>
-        <Logo href="#">DEV.J</Logo>
+        <Logo href="#" data-aos="fade-right">
+          DEV.J
+        </Logo>
         <MenuIcon onClick={toggle}>
           <i className={isOpen ? "X" : "X"}></i>
         </MenuIcon>
-        <Menu isOpen={isOpen}>
+        <Menu isOpen={isOpen} data-aos="fade-right">
           <MenuItem href="#">Home</MenuItem>
           <MenuItem href="#">About</MenuItem>
           <MenuItem href="#">Services</MenuItem>

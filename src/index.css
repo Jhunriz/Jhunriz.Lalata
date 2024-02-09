@@ -19,4 +19,5 @@
 html,
 body {
   background-color: var(--background);
+  font-family: "poppins", ui-sans-serif;
 }
