@@ -1,0 +1,17 @@
+:root {
+  --text: #060606;
+  --background: #18171c;
+  --primary: #6e95aa;
+  --secondary: #c899df;
+  --accent: rgb(133, 110, 238);
+  --cvtitle: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 43%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.App {
+  background-color: var(--background);
+}

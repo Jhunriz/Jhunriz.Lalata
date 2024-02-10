@@ -1,24 +1,15 @@
 import React from "react";
+import MainLayout from "./MainLayout";
 import Introduction from "../Pages/Introduction";
-import Skills from "../Pages/Skills";
-import FeedbackButton from "../Components/FeedBack";
 
-export default function MainContent() {
-  const handleFeedBackClick = () => {
-    console.log("clicked");
-  };
-
+const MainContent = () => {
   return (
-    <div className="flex flex-col gap-24">
+    <MainLayout>
       <div>
         <Introduction />
       </div>
-      <div className="feedbackButton hidden sm:inline-block">
-        <FeedbackButton width="30vh" />
-      </div>
-      <div>
-        <Skills />
-      </div>
-    </div>
+    </MainLayout>
   );
-}
+};
+
+export default MainContent;

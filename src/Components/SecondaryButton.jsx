@@ -1,4 +1,39 @@
-export default function SecondaryButton({
+import React from "react";
+import styled from "styled-components";
+
+const SecondaryButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: var(--text);
+  transition: ease-in-out 150ms;
+
+  &:focus {
+    ring: 2px black;
+    ring-offset: 2px;
+  }
+  &:disabled {
+    opacity: 0.25;
+    pointer-events: none;
+  }
+
+  ${(props) =>
+    props.disabled &&
+    `
+    opacity: 0.25;
+  `}
+`;
+
+export default function StyledSecondaryButton({
   type = "button",
   className = "",
   title,
@@ -7,18 +42,14 @@ export default function SecondaryButton({
   ...props
 }) {
   return (
-    <button
-      {...props}
+    <SecondaryButton
       type={type}
       title={title}
-      className={
-        `inline-flex items-center px-4 py-2 bg-black border border-gray-300 rounded-md font-semibold text-xs text-gray-300 uppercase tracking-widest shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150 ${
-          disabled && "opacity-25"
-        } ` + className
-      }
       disabled={disabled}
+      className={className}
+      {...props}
     >
       {children}
-    </button>
+    </SecondaryButton>
   );
 }

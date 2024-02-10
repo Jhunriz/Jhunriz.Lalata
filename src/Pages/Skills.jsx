@@ -1,61 +1,44 @@
-import React, { useState, useEffect } from "react";
-import SkillCards from "../Components/Card";
-import react from "../assets/react2.png";
-import laravel from "../assets/laravel2.png";
-import mysql from "../assets/mysql.png";
-import tailwind from "../assets/tailwindcss.png";
-export default function Skills() {
-  const [rotation, setRotation] = useState(0);
+import React from "react";
+import AnimatedSkills from "../Components/AnimatedSkills";
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setRotation((rotation) => rotation + 1);
-    }, 30);
-
-    return () => clearInterval(intervalId);
-  }, []);
+const Skills = () => {
   return (
-    <div class="grid grid-col lg:grid-cols-4 justify-items-center gap-10 lg:px-96 py-24">
-      <SkillCards
-        title={"Reactjs"}
-        styledColor={"bg-blue-100"}
-        image={react}
-        style={{
-          fontSize: "30vh",
-          transform: `rotate(${rotation}deg)`,
-          color: "",
-        }}
+    <div class="grid grid-col w- lg:grid-cols-3 justify-items-center items-center gap-3 py-24">
+      <AnimatedSkills
+        title="HTML5"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
+        bg={"hover:bg-orange-500"}
+        imageUrl={"https://cdn-icons-png.flaticon.com/512/732/732212.png"}
       />
-      <SkillCards
-        title={"Laravel"}
-        styledColor={"bg-red-100"}
-        image={laravel}
-        style={{
-          fontSize: "30vh",
-          transform: `rotate(${rotation}deg)`,
-          color: "",
-        }}
+      <AnimatedSkills
+        title="CSS3"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
+        imageUrl={
+          "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+        }
       />
-      <SkillCards
-        title={"MySQL"}
-        image={mysql}
-        styledColor={"bg-gray-200"}
-        style={{
-          fontSize: "30vh",
-          transform: `rotate(${rotation}deg)`,
-          color: "",
-        }}
+      <AnimatedSkills
+        title="Javascript"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
+        imageUrl={
+          "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
+        }
       />
-      <SkillCards
-        title={"TailwindCss"}
-        image={tailwind}
-        styledColor={"bg-green-100"}
-        style={{
-          fontSize: "30vh",
-          transform: `rotate(${rotation}deg)`,
-          color: "",
-        }}
+      <AnimatedSkills title="PHP" Description={"sdfsdffsdafsdffasdasdfasdf"} />
+      <AnimatedSkills
+        title="MySql"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
+      />
+      <AnimatedSkills
+        title="TailwindCss"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
+      />
+      <AnimatedSkills
+        title="Styled-Components"
+        Description={"sdfsdffsdafsdffasdasdfasdf"}
       />
     </div>
   );
-}
+};
+
+export default Skills;
