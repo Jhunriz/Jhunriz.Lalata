@@ -6,7 +6,7 @@ const MainLayout = ({ children }) => {
   return (
     <div className="">
       <StyledNavbar />
-      <main className="px-24 py-24">{children}</main>
+      <main className="lg:px-24 md:px-40 py-24">{children}</main>
     </div>
   );
 };
