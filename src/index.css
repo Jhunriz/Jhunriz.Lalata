@@ -3,8 +3,8 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --text: #fff;
-  --background: #18171c;
+  --text: black;
+  --background: white;
   --primary: #6e95aa;
   --secondary: #9abdd0;
   --accent: rgb(133, 110, 238);
@@ -14,12 +14,11 @@
     rgba(9, 9, 121, 1) 43%,
     rgba(0, 212, 255, 1) 100%
   );
+  
 }
 
 html,
 body {
   background-color: var(--background);
-  font-family: "poppins", ui-sans-serif;
-  margin-left: 100px;
-  margin-right: 100px;
+  font-family: "Roboto", sans-serif;
 }
