@@ -20,4 +20,6 @@ html,
 body {
   background-color: var(--background);
   font-family: "poppins", ui-sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
 }
