@@ -10,7 +10,7 @@ const Introduction = () => {
           <p className="text-3xl md:text-4xl lg:text-9xl bg-gradient-to-r from-blue-500 via-red-500 to-black bg-clip-text text-transparent"><strong>Full Stack Developer.</strong></p>
           <p className='text-xl pb-2'>About Me - </p>
           <div className='flex flex-col lg:flex-row items-center gap-5'>
-            <div className='w-full lg:w-full h-auto rounded-lg bg-blue-500 shadow-lg border border-blue-500 shadow-blue-500 mb-5 lg:mb-0'>
+            <div className='hidden lg:block w-full lg:w-full h-auto rounded-lg bg-blue-500 shadow-lg border border-blue-500 shadow-blue-500 mb-5 lg:mb-0'>
               <div className='flex flex-col justify-start items-start h-full p-4'>
                 <div className='flex justify-between items-start w-full gap-10'>
                   <div className='flex flex-col'>
