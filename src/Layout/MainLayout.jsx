@@ -1,14 +1,16 @@
-import React from "react";
-import Footer from "./Footer";
 import StyledNavbar from "./Navbar";
+import Section from "./Section";
 
-const MainLayout = ({ children }) => {
+
+export default function MainLayout() {
   return (
-    <div className="">
-      <StyledNavbar />
-      <main className="lg:px-24 md:px-40 py-24">{children}</main>
+    <div className="font-figtree">
+      <div className="">
+        <StyledNavbar />
+        <main className="lg:px-24 md:px-40 py-24">
+          <Section />
+        </main>
+      </div>
     </div>
   );
-};
-
-export default MainLayout;
+}

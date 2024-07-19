@@ -4,10 +4,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="font-figtree">
+    <div>
       <nav className='p-5 bg-white w-full fixed z-50 border-b-4 md:px-24'>
         <div className='flex justify-between items-center'>
-          <div className='text-dark'>logo</div>
+          <div className='text-dark'><a href="#"><strong>JLALATA</strong></a></div>
           <div className='hidden md:flex items-start gap-5'>
             <a href="#" className='text-dark'>Home</a>
             <a href="#" className='text-dark'>Portfolio</a>
