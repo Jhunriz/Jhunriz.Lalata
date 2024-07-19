@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import StyledNavbar from "./Navbar";
 import Section from "./Section";
 
@@ -10,6 +11,7 @@ export default function MainLayout() {
         <main className="lg:px-24 md:px-40 py-24">
           <Section />
         </main>
+        <Footer />
       </div>
     </div>
   );
