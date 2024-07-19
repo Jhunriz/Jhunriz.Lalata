@@ -1,5 +1,6 @@
+
 import Introduction from "../Pages/Introduction";
-import Skills from "../Pages/Skills"
+import Skills from "../Pages/Skills";
 
 const Section = () => {
     const pages = [
@@ -8,9 +9,9 @@ const Section = () => {
     ];
 
     return (
-        <div>
+        <div className="flex flex-col pt-24 lg:pt-0">
             {pages.map((page, index) => (
-                <section className="h-screen" key={index}>
+                <section className="h-screen p-4 flex items-center justify-center" key={index}>
                     <page.page />
                 </section>
             ))}
