@@ -1,3 +1,4 @@
+import { SunMedium } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -12,7 +13,7 @@ export default function Navbar() {
             <a href="#" className='text-dark'>Home</a>
             <a href="#" className='text-dark'>Portfolio</a>
             <a href="#" className='text-dark'>CV</a>
-            <button className='text-dark'>DOWNLOAD</button>
+            <SunMedium />
           </div>
           <div className='md:hidden'>
             <button onClick={() => setIsOpen(!isOpen)}>
