@@ -12,9 +12,17 @@ const Introduction = () => {
           <div>
             <p className='text-lg text-black dark:text-white'>Hello! I'm Jhunriz Lalata, a passionate and dedicated Full Stack Web Developer with a knack for creating stunning, user-friendly websites and applications. With a background in 1 year, I blend creativity and technical skills to bring innovative ideas to life.</p>
           </div>
-          <div className='py-5 flex flex-row gap-4'>
-            <a href="https://github.com/Jhunriz"><button className='hover:bg-slate-950 shadow-md shadow-slate-500 hover:shadow-lg hover:shadow-slate-800 px-10 lg:px-24 py-2 bg-black text-white rounded flex justify-between items-center gap-5'><Github /> Github</button></a>
-            <a href="https://www.linkedin.com/in/jhunriz-b-lalata-036a6b272/"><button className='hover:bg-blue-900 shadow-md shadow-blue-500 hover:shadow-lg hover:shadow-blue-500 px-10 lg:px-24 py-2 bg-blue-500 text-white rounded flex justify-between items-center gap-5'><Linkedin />LinkedIn</button></a>
+          <div className='py-5 flex flex-wrap gap-4 justify-center lg:justify-start'>
+            <a href="#">
+              <button className='px-6 py-2 lg:px-24 bg-black text-white rounded flex items-center gap-2 sm:gap-5'>
+                <Github /> Github
+              </button>
+            </a>
+            <a href="#">
+              <button className='px-6 py-2 lg:px-24 bg-blue-500 text-white rounded flex items-center gap-2 sm:gap-5'>
+                <Linkedin /> LinkedIn
+              </button>
+            </a>
           </div>
         </div>
         <div className="relative justify-center items-center bg-black dark:bg-slate-900 mb-5 shadow-lg h-auto w-full max-w-md rounded mt-4 md:mt-0">
