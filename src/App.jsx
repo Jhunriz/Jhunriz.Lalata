@@ -5,7 +5,7 @@ import MainLayout from "./Layout/MainLayout";
 function App() {
 
   return (
-    <div className="App dark:bg-black">
+    <div className="App">
       <MainLayout />
     </div>
   );

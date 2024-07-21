@@ -3,7 +3,7 @@ import react from '../assets/Hijhunriz.svg';
 
 const Introduction = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 mt-10'>
       <div className='flex flex-col items-center md:flex-row md:justify-between md:space-x-4'>
         <div className='text-left md:text-left'>
           <p className="text-black text-2xl pt-24 text-start lg:p-0 dark:text-white">Hello, I AM JHUNRIZ</p>

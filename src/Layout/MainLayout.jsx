@@ -8,7 +8,7 @@ export default function MainLayout() {
     <div className="font-figtree">
       <div className="">
         <StyledNavbar />
-        <main className="pb-24">
+        <main className="">
           <Section />
         </main>
         <Footer />
