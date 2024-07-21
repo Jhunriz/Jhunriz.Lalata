@@ -18,7 +18,7 @@ const Introduction = () => {
                 <Github /> Github
               </button>
             </a>
-            <a href="www.linkedin.com/in/jhunriz-b-lalata-036a6b272">
+            <a href="https://www.linkedin.com/in/jhunriz-b-lalata-036a6b272/">
               <button className='px-6 py-2 lg:px-24 bg-blue-500 text-white rounded flex items-center gap-2 sm:gap-5'>
                 <Linkedin /> LinkedIn
               </button>
