@@ -10,7 +10,7 @@ const Introduction = () => {
           <p className="text-black text-2xl pt-24 text-start lg:p-0 dark:text-white">Hello, I AM JHUNRIZ</p>
           <p className="text-3xl md:text-4xl lg:text-9xl bg-gradient-to-r lg:pb-7 from-blue-500 via-red-500 to-black dark:to-white bg-clip-text text-transparent"><strong>Full Stack Developer.</strong></p>
           <div>
-            <p className='text-lg text-black dark:text-white'>Hello! I'm Jhunriz Lalata, a passionate and dedicated Full Stack Web Developer with a knack for creating stunning, user-friendly websites and applications. With a background in 1 year, I blend creativity and technical skills to bring innovative ideas to life.</p>
+            <p className='text-lg text-black dark:text-white text-justify'>Hello! I'm Jhunriz Lalata, a passionate and dedicated Full Stack Web Developer with a knack for creating stunning, user-friendly websites and applications. With a background in 1 year, I blend creativity and technical skills to bring innovative ideas to life.</p>
           </div>
           <div className='py-5 flex flex-wrap gap-4 justify-center lg:justify-start'>
             <a href="https://github.com/Jhunriz">
