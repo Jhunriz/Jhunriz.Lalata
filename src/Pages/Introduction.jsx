@@ -13,12 +13,12 @@ const Introduction = () => {
             <p className='text-lg text-black dark:text-white'>Hello! I'm Jhunriz Lalata, a passionate and dedicated Full Stack Web Developer with a knack for creating stunning, user-friendly websites and applications. With a background in 1 year, I blend creativity and technical skills to bring innovative ideas to life.</p>
           </div>
           <div className='py-5 flex flex-wrap gap-4 justify-center lg:justify-start'>
-            <a href="#">
+            <a href="https://github.com/Jhunriz">
               <button className='px-6 py-2 lg:px-24 bg-black text-white rounded flex items-center gap-2 sm:gap-5'>
                 <Github /> Github
               </button>
             </a>
-            <a href="#">
+            <a href="www.linkedin.com/in/jhunriz-b-lalata-036a6b272">
               <button className='px-6 py-2 lg:px-24 bg-blue-500 text-white rounded flex items-center gap-2 sm:gap-5'>
                 <Linkedin /> LinkedIn
               </button>
