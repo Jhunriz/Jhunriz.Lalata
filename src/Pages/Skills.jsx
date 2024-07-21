@@ -9,6 +9,7 @@ import Bootstrap from '../assets/Bootstrap.png';
 import mysql from '../assets/mysql.png';
 import vite from '../assets/Vitejs.png';
 import postman from '../assets/Postman.png';
+import animejs from '../assets/animejs.png';
 
 const Skills = () => {
   const [openCard, setOpenCard] = useState(null);
@@ -43,7 +44,7 @@ const Skills = () => {
       targets: '.slider',
       translateX: [
         { value: '100%', duration: 0 },
-        { value: '-100%', duration: 20000, easing: 'linear' }
+        { value: '-100%', duration: 15000, easing: 'linear' }
       ],
       loop: true
     });
@@ -93,12 +94,14 @@ const Skills = () => {
       <div className="overflow-hidden">
         <div className="slider flex gap-10 w-24 justify-center items-center">
           <img src={tailwindcss} alt="Tailwind CSS" className="w-24" onError={(e) => { e.target.onerror = null; }} />
+          <img src={animejs} alt="animejs" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={styledComponent} alt="Styled Component" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={jquery} alt="jQuery" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={Typescript} alt="TypeScript" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={Bootstrap} alt="Bootstrap" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={mysql} alt="MySQL" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={vite} alt="Vite" className="w-24" onError={(e) => { e.target.onerror = null; }} />
+          <img src={animejs} alt="animejs" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={postman} alt="Postman" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={tailwindcss} alt="Tailwind CSS" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={styledComponent} alt="Styled Component" className="w-24" onError={(e) => { e.target.onerror = null; }} />
@@ -108,6 +111,7 @@ const Skills = () => {
           <img src={mysql} alt="MySQL" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={vite} alt="Vite" className="w-24" onError={(e) => { e.target.onerror = null; }} />
           <img src={postman} alt="Postman" className="w-24" onError={(e) => { e.target.onerror = null; }} />
+          <img src={animejs} alt="animejs" className="w-24" onError={(e) => { e.target.onerror = null; }} />
         </div>
       </div>
     </div>
