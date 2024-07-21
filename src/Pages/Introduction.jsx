@@ -6,9 +6,8 @@ const Introduction = () => {
     <div className='px-4'>
       <div className='flex flex-col items-center md:flex-row md:justify-between md:space-x-4'>
         <div className='text-center md:text-left'>
-          <p className="text-black text-2xl pt-24 lg:p-0">Hello, I AM JHUNRIZ</p>
-          <p className="text-3xl md:text-4xl lg:text-9xl bg-gradient-to-r from-blue-500 via-red-500 to-black bg-clip-text text-transparent"><strong>Full Stack Developer.</strong></p>
-          <p className='text-xl pb-2'>About Me - </p>
+          <p className="text-black text-2xl pt-24 lg:p-0 dark:text-white">Hello, I AM JHUNRIZ</p>
+          <p className="text-3xl md:text-4xl lg:text-9xl bg-gradient-to-r lg:pb-7 from-blue-500 via-red-500 to-black dark:to-white bg-clip-text text-transparent"><strong>Full Stack Developer.</strong></p>
           <div className='flex flex-col lg:flex-row items-center gap-5'>
             <div className='hidden lg:block w-full lg:w-full h-auto rounded-lg bg-blue-500 shadow-lg border border-blue-500 shadow-blue-500 mb-5 lg:mb-0'>
               <div className='flex flex-col justify-start items-start h-full p-4'>
@@ -46,10 +45,8 @@ const Introduction = () => {
               </div>
             </div>
           </div>
-
         </div>
-
-        <div className="bg-black shadow-lg h-auto w-full max-w-md rounded-full mt-4 md:mt-0">
+        <div className="bg-black dark:bg-slate-900 shadow-lg h-auto w-full max-w-md rounded-full mt-4 md:mt-0">
           <img src={Jhunriz} alt="Jhunriz" className="w-full h-auto rounded" />
         </div>
       </div>

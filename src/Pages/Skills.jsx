@@ -34,7 +34,7 @@ const Skills = () => {
   return (
     <div className='text-right pt-auto lg:pt-0 px-4 lg:px-0'>
       <div className="pt-96 lg:pt-0">
-        <p className="text-6xl md:text-9xl lg:text-4xl xl:text-5xl py-4 lg:py-6 bg-gradient-to-r from-blue-500 via-red-500 to-black bg-clip-text text-transparent">
+        <p className="text-6xl md:text-9xl lg:text-4xl xl:text-5xl py-4 lg:py-6 bg-gradient-to-r from-blue-500 via-red-500 to-black dark:to-white bg-clip-text text-transparent">
           <strong>Developer Skills</strong>
         </p>
       </div>
@@ -47,14 +47,14 @@ const Skills = () => {
               </div>
             )}
             <div
-              className={`cursor-pointer ${cardName === 'frontend' ? 'bg-blue-500' : cardName === 'backend' ? 'bg-red-500' : 'bg-black'} w-full h-full rounded-lg shadow-lg border ${cardName === 'frontend' ? 'border-blue-500' : cardName === 'backend' ? 'border-red-500' : 'border-black'} ${cardName === 'frontend' ? 'shadow-blue-500' : cardName === 'backend' ? 'shadow-red-500' : 'shadow-black'}`}
+              className={`cursor-pointer ${cardName === 'frontend' ? 'bg-blue-500' : cardName === 'backend' ? 'bg-red-500' : 'bg-black'} w-full h-full rounded-lg shadow-lg border ${cardName === 'frontend' ? 'border-blue-500' : cardName === 'backend' ? 'border-red-500' : 'border-black dark:border-slate-700'} ${cardName === 'frontend' ? 'shadow-blue-500' : cardName === 'backend' ? 'shadow-red-500' : 'shadow-black dark:shadow-slate-800'}`}
               onClick={() => handleCardClick(cardName)}
             >
               <div className='flex flex-row items-center justify-between h-full p-4'>
                 <button>
                   <CircleChevronLeft className="text-white" />
                 </button>
-                <div className='text-white text-center'>
+                <div className='text-white text-end'>
                   <p className='text-lg font-semibold'>{cardName.charAt(0).toUpperCase() + cardName.slice(1)}</p>
                   <p className='text-sm'>
                     {cardName === 'frontend' ? 'React/Typescript/Javascript' : cardName === 'backend' ? 'Laravel/php' : 'Git/Github'}
