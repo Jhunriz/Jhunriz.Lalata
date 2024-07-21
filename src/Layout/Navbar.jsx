@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <div className='animenav'>
-      <nav className='p-5 bg-white dark:bg-black w-full fixed z-50 border-b-4 dark:border-gray-900 md:px-24'>
+      <nav className='p-5 bg-white dark:bg-slate-950 w-full fixed z-50 border-b-4 dark:border-gray-900 md:px-24'>
         <div className='flex justify-between items-center'>
           <div className='text-dark dark:text-white'>
             <a href="#"><strong>JLALATA</strong></a>
