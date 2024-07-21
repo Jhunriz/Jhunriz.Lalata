@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <div className="bg-white text-black py-6 border-t-8">
+    <div className="bg-white text-black dark:bg-slate-950 dark:text-white py-6 border-t-8 dark:border-slate-900">
       <div className="container mx-auto px-4 lg:px-24">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="mb-6 lg:mb-0">
-            <a href="#" className="flex items-center">
-              <span className="text-2xl font-semibold whitespace-nowrap">
+            <a href="#" className="flex items-center text-dark dark:text-white">
+              <span className="text-2xl text-dark dark:text-white font-semibold whitespace-nowrap">
                 JLALATA
               </span>
             </a>
@@ -53,9 +53,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-700" />
+        <hr className="my-6 border-gray-700 dark:border-slate-900" />
         <div className="flex justify-center space-x-5">
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black dark:text-white hover:text-slate-900">
             <svg
               className="w-5 h-5"
               aria-hidden="true"
@@ -71,7 +71,7 @@ export default function Footer() {
             </svg>
             <span className="sr-only">Facebook page</span>
           </a>
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black dark:text-white hover:text-slate-900">
             <svg
               className="w-5 h-5"
               aria-hidden="true"
@@ -83,7 +83,7 @@ export default function Footer() {
             </svg>
             <span className="sr-only">Discord community</span>
           </a>
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black dark:text-white hover:text-slate-900">
             <svg
               className="w-5 h-5"
               aria-hidden="true"
@@ -99,7 +99,7 @@ export default function Footer() {
             </svg>
             <span className="sr-only">Twitter page</span>
           </a>
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black dark:text-white hover:text-slate-900">
             <svg
               className="w-5 h-5"
               aria-hidden="true"
