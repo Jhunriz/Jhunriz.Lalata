@@ -43,7 +43,7 @@ const Skills = () => {
           <div key={cardName} className='w-full md:w-1/2 lg:w-80 h-24 rounded-lg mb-4 lg:mb-0'>
             {openCard === cardName && (
               <div ref={cardRefs[cardName]} className="bg-gray-100 p-4 rounded-lg shadow-lg">
-                <p className='text-center'>{cardName === 'frontend' ? 'I have 1 Year of Experience in Javascript' : cardName === 'backend' ? 'I have 1 Year of Experience in Laravel' : 'I have 2 Years of Experience in Version Control'}</p>
+                <p className='text-center'>{cardName === 'frontend' ? 'I have 5 Year of Experience in Javascript' : cardName === 'backend' ? 'I have 1 Year of Experience in Laravel' : 'I have 2 Years of Experience in Version Control'}</p>
               </div>
             )}
             <div
